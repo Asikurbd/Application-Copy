@@ -18,7 +18,7 @@
         const data = await response.json();      
         let htmlString = ' <div class="div"><center> Job Application Copy </center></div>';        
         for (let file of data) {
-          htmlString += `<hr> &#x2022; <a href="${file.path}">${file.name}</a>`;
+          htmlString += '<hr> &#x2022; <a href="${file.path}">${file.name}</a>';
         }
 
         htmlString += '<hr><center><b> Maximum Upload Size Limit 25 MB</b></center>';	      
